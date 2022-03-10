@@ -8,27 +8,30 @@
 </head>
 <body>
     <h2>Product</h2>
+    @foreach ($data->items as $key => $value)
     <table>
         <tr>
             <td>product_id</td>
             <td>:</td>
-            <td>data</td>
+            <td>{{$value->product_id}}</td>
         </tr>
         <tr>
             <td>name</td>
             <td>:</td>
-            <td>data</td>
+            <td>{{$value->name}}</td>
         </tr>
         <tr>
             <td>price</td>
             <td>:</td>
-            <td>data</td>
+            <td>{{$value->price}}</td>
         </tr>
         <tr>
             <td>stock</td>
             <td>:</td>
-            <td>data</td>
+            <td>{{$value->stock}}</td>
         </tr>
-    </table>
+    </table>    
+    
+    @endforeach
 </body>
 </html>
